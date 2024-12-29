@@ -24,7 +24,7 @@ function App() {
 
         <main>
         <section class="contents" id="projects">
-          <h1>Projects</h1>
+          <h1>My Crafts</h1>
           <div className="project-tile">
             <h2>Pragmatic To-Do List</h2>
             <p>A clean, intuitive, and minimalistic to-do list application.</p>
@@ -37,6 +37,12 @@ function App() {
             <a href="https://pragmatic-todo-list.vercel.app/" target="_blank">View Project</a>
           </div>
 
+          <div className="project-tile">
+            <h2>Static Factory Game</h2>
+            <p>An Interactive 2D Game that runs on terminal</p>
+            <a href="https://pragmatic-todo-list.vercel.app/" target="_blank">View Project</a>
+          </div>
+
         </section>
         <section  class="contents" id="about">
           <h2>About Me</h2>
@@ -45,8 +51,8 @@ function App() {
         <section class="contents" id="contacts">
           <h4>My Contacts</h4>
           <ul>
-            <li><a href="https://github.com/JianRong-King" target="_blank">GitHub</a></li>
-            <li><a id="profile-link" href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/JianRong-King" target="_blank" rel="noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/jianrong-king" target="_blank" rel="noreferrer">LinkedIn</a></li>
             <li>Email: <a href="mailto:kingjianrong3249@gmail.com">kingjianrong3249@gmail.com</a></li>
           </ul>
         </section>
