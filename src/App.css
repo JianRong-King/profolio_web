@@ -9,27 +9,28 @@ body {
   align-items: center;
   min-height: 100vh; /* Ensures body takes full viewport height */
 }
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 120px; /* Adjust if navbar overlaps */
+  margin-top: calc(80px + 20px); 
   width: 100%;
-  padding: 0 20px;
+  flex: 1; /* Allow the main content to take up the remaining height */
 }
 
-section {
-  width: 80%;
-  max-width: 1200px;
-  margin: 20px auto; /* Ensure centering in parent */
+.contents{
+  width: 100%; /* Adjust width of sections to be centered */
+  max-width: 1200px; /* Optionally, set a maximum width */
+  margin: 220px;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Centers text content */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Centers content within each section */
+  min-height: 100vh; 
 }
 
 #header {
@@ -80,8 +81,10 @@ section {
 }
 
 #welcome-section {
-  text-align: center;
+  text-align: left;
   padding: 60px 20px;
+  margin: 210px; /* Ensure no extra margin at the top */
+  align-content: left;
 }
 
 #welcome-section h1 {
@@ -111,10 +114,6 @@ section {
 
 #about ul li a:hover {
   text-decoration: underline;
-}
-
-#contacts li {
-  text-align: center;
 }
 
 .project-tile {

@@ -11,12 +11,19 @@ function App() {
           </ul>
         </nav>
       </header>
-      <main>
+      
+
+      
+
         <section id="welcome-section">
-          <h1>Welcome</h1>
-          <p>Hi! I'm Jian Rong. Explore my portfolio to learn more about me and my projects!</p>
+          <h2>Hello!</h2>
+          <h1>I'm Jian Rong King</h1>
         </section>
-        <section id="projects">
+
+
+
+        <main>
+        <section class="contents" id="projects">
           <h1>Projects</h1>
           <div className="project-tile">
             <h2>Pragmatic To-Do List</h2>
@@ -31,11 +38,11 @@ function App() {
           </div>
 
         </section>
-        <section id="about">
+        <section  class="contents" id="about">
           <h2>About Me</h2>
           <p>I’m a passionate developer who loves building clean, efficient, and impactful projects.</p>
         </section>
-        <section id="contacts">
+        <section class="contents" id="contacts">
           <h4>My Contacts</h4>
           <ul>
             <li><a href="https://github.com/JianRong-King" target="_blank">GitHub</a></li>
