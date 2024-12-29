@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh; /* Ensures body takes full viewport height */
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px; /* Adjust if navbar overlaps */
+  width: 100%;
+  padding: 0 20px;
+}
+
+section {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto; /* Ensure centering in parent */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centers text content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  display: flex;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  justify-content: flex-end;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightblue;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: red;
+}
+
+#welcome-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#welcome-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* About Section */
+#about ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#about ul li {
+  margin-bottom: 10px;
+}
+
+#about ul li a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+#about ul li a:hover {
+  text-decoration: underline;
+}
+
+#contacts li {
+  text-align: center;
+}
+
+.project-tile {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-tile:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-tile h2 {
+  margin: 0 0 10px;
+}
+
+.project-tile a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.project-tile a:hover {
+  text-decoration: underline;
+}
+
+/* Default styles (for larger screens) */
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
