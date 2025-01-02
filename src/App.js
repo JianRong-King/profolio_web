@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './App.css';
+
 
 function App() {
   // to initialize AOS, to enable animate on scroll
@@ -12,10 +12,12 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <header id="header">
-        <nav id="navbar" >
-          <ul>
+    <div className='min-h-screen bg-gradient-to-b from-white to-blue-200'>
+      <header id="header" className='p-6 shadow-lg'>
+        <nav id="navbar" className='mt-2 flex pl-4 pr-6'>
+          <h1 className='text-xl font-medium flex-1'>King</h1>
+          
+          <ul className='list-none inline-flex space-x-8 flex-2 '>
             <li><a className="nav-link" href="#about">About me</a></li>
             <li><a className="nav-link" href="#projects">Projects</a></li>
             <li><a className="nav-link" href="#contacts">My Contact</a></li>
@@ -24,19 +26,17 @@ function App() {
       </header>
 
 
-
       <main>
-
       <section id="welcome-section"
             data-aos="fade-up"
             data-aos-duration="700"
             data-aos-once="true"
             >
-        <h2 class= "text-2xl">Hello!</h2>
+        <h2 class= "text-2xl font-serif">Hello!</h2>
         <h1>I'm Jian Rong King</h1>
       </section>
 
-
+      {/* use grid */}
         <section className="contents" id="projects"
                     data-aos="fade-up"
                     data-aos-duration="700"
