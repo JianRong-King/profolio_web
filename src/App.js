@@ -16,16 +16,25 @@ function App() {
       title: "Pragmatic To-Do List",
       description: "A clean, intuitive, and minimalistic to-do list application.",
       link: "https://pragmatic-todo-list.vercel.app/",
-      date : "2024-12-12",
-      tech: "React, CSS, HTML"
+      date : "Dec 3, 2024",
+      Category: "React Development"
     }
     , {
       title: "Guitar Hero",
       description: "An Interactive Musical Game",
       link: "https://pragmatic-todo-list.vercel.app/",
-      date : "2024-9-6",
-      tech: "Javascript & WebSockets API"
+      date : "Sep 6, 2024",
+      Category: "Functional Programming"
     }
+
+    , {
+      title: "Paris Transaction Database System",
+      description: "Database Management System",
+      link: "https://pragmatic-todo-list.vercel.app/",
+      date : "Oct 20, 2024",
+      Category: "Database Management System"
+    }
+
   ]
 
   return (
@@ -59,67 +68,56 @@ function App() {
 
       </section>
 
-      <section className="contents" id="projects"
-                          data-aos="fade-up"
-                          data-aos-duration="700"
-                          data-aos-once="true"
-      >
-        <h2 className='text-pretty tezt-4xl font-semibold tracking-tight text-gray-900 sm:text-4xl'>My Crafts</h2>
-        
-        {/* after done use map and render */}
 
+
+
+
+
+    <section className="bg-white py-24 sm:py-32" id="projects">
+      <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+
+        <div className='mx-auto max-w-2xl lg:mx-0'>
+          <h2 className='text-pretty tezt-4xl font-semibold tracking-tight text-gray-900 sm:text-4xl'>My Crafts</h2>
+        </div>
+
+
+        {/* apply grid layout */}
         <div className='mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
 
-        {projects.map( (projects, idx) => (            
-          <article key={idx} className='flex max-w-xl flex-col items-start justify-between'>
-            <div className='flex items-center gap-x-4 text-xs'>
-              <time className='tezt-gray-500'>{projects.date}</time>
-              <p className='relative z-10 rounded-full bg-gray-200 px-3 py-1.5 font-medium text-gray-700 hover:bg-gray-300'>{projects.tech}</p>
-   
+        {projects.map( (projects, idx) => (        
+
+          <article key={idx} className='flex max-w-xl flex-col items-start justify-between bg-gray-400'>
+
+            <div className='relative w-full max-w-lg mx-auto border-2 border-gray-300 rounded-lg overflow-hidden shadow-lg'>
+
+              {/* category & date */}
+              <div className='flex items-center gap-x-4 text-xs m-2 ml-4'>
+                  <time className='text-gray-500'>{projects.date}</time>
+                  <p className='relative z-10 rounded-full bg-gray-200 px-3 py-1.5 font-medium text-gray-700 hover:bg-gray-300'>{projects.Category}</p>
+              </div>
+
+              {/* put gif in the future */}
+            <img className='w-full h-64 object-cover rounded-lg sm:rounded-lg md:rounded-lg' src="https://wallpapers.com/images/high/pure-black-background-5q79lsl997wkfn6j.webp" alt="project" / >
+
+                
+            <div className='absolute inset-0 bg-blue-400 bg-opacity-100 flex items-center justify-center hover:opacity-0'>
+              <h3 className='text-xl font-semibold text-white'>{projects.title}</h3>
+              <p className='mt-4 text-gray-700'>{projects.description}</p>
             </div>
 
-
-
+            </div>
 
             </article>
+
             ))}
+
+        </div>
 
         </div>
 
 
       </section>
 
-
-
-        {/* <section className="contents" id="projects"
-                    data-aos="fade-up"
-                    data-aos-duration="700"
-                    data-aos-once="true" // bug when click on nav link, the page will go too far down
-        >
-          <h1>My Crafts</h1>
-          <div data-aos="fade-up" className="project-tile">
-            <h2>Pragmatic To-Do List</h2>
-            <p>A clean, intuitive, and minimalistic to-do list application.</p>
-            <a href="https://pragmatic-todo-list.vercel.app/" target="_blank" rel="noreferrer">View Project</a>
-          </div>
-
-          <div className="project-tile">
-            <h2>Guitar Hero</h2>
-            <p>An Interactive Musical Game</p>
-            <a href="https://pragmatic-todo-list.vercel.app/" target="_blank" rel="noreferrer">View Project</a>
-          </div>
-
-          <div className="project-tile">
-            <h2>Static Factory Game</h2>
-            <p>An Interactive 2D Game that runs on terminal</p>
-            <a href="https://pragmatic-todo-list.vercel.app/" target="_blank" rel="noreferrer">View Project</a>
-          </div>
-        </section> */}
-
-        {/* <section className="contents" id="about">
-          <h2>About Me</h2>
-          <p>I’m a passionate developer who loves building clean, efficient, and impactful projects.</p>
-        </section> */}
 
         <section className="contents" id="contacts">
           <h4>My Contacts</h4>
