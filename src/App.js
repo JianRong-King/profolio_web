@@ -7,12 +7,14 @@ function App() {
   // to initialize AOS, to enable animate on scroll
   useEffect(() => {
     AOS.init();
+
+
   }, []);
 
   return (
     <div>
       <header id="header">
-        <nav id="navbar">
+        <nav id="navbar" >
           <ul>
             <li><a className="nav-link" href="#about">About me</a></li>
             <li><a className="nav-link" href="#projects">Projects</a></li>
@@ -21,16 +23,20 @@ function App() {
         </nav>
       </header>
 
+
+
+      <main>
+
       <section id="welcome-section"
             data-aos="fade-up"
             data-aos-duration="700"
             data-aos-once="true"
             >
-        <h2>Hello!</h2>
+        <h2 class= "text-2xl">Hello!</h2>
         <h1>I'm Jian Rong King</h1>
       </section>
 
-      <main>
+
         <section className="contents" id="projects"
                     data-aos="fade-up"
                     data-aos-duration="700"
